@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基于JavaScript(Node.js平台) Github知识库搜索工具</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <p>基于JavaScript(Node.js平台) Github知识库搜索工具</p>
+    </header>
+    <div id="message">
+        <img src="images/alert.png" alt="">
+        <span>这是一条提示信息</span>
+    </div>
+    <div class="search">
+        <div class="search-input-container">
+            <input type="text" id="searchInput" placeholder="请输入关键字，比如: bitcoin ...">
+        </div><!--
+     --><button type="button" id="searchButton">
+         <img src="images/search.png" alt="">
+         搜索
+        </button>
+    </div>
+    <div id="loading">
+        <img src="images/loading.png" alt="">
+    </div>
+    <div id="showPlace">
+        <div id="barChart"></div>
+        <div id="treeMap"></div>
+    </div>
+    <script src="echarts.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
